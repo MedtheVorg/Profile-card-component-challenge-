@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/*font-family: 'Kumbh Sans', sans-serif; */
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: var(--Dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  position: relative;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.circle1,
+.circle2 {
+  position: fixed;
+  max-width: 100%;
+  display: block;
+}
+
+.circle1 {
+  top: -35%;
+  left: -11%;
+}
+.circle2 {
+  bottom: -45%;
+  right: -10%;
+}
+
+main {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 100;
+
+  /* box-shadow: 5px 5px 0.95rem #ccc; */
+}
+
+.upperSection img {
+  min-width: 100%;
+}
+.lowerSection {
+  position: relative;
+}
+.lowerSection .info {
+  text-align: center;
+  padding: 3rem 2.5rem 2rem 2.5rem;
+}
+.lowerSection .info img {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid white;
+  left: 50%;
+  top: -22%;
+  transform: translate(-50%, 0);
+}
+.lowerSection .info h3 {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  display: inline-block;
+  color: var(--Very-dark-desaturated-blue);
+}
+.lowerSection .info span {
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+}
+.lowerSection .info p {
+  margin-top: 0.5rem;
+  color: var(--Dark-grayish-blue);
+}
+
+.lowerSection .stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0rem 0.5rem 0rem;
+  text-align: center;
+}
+.lowerSection .stats div {
+  padding: 1rem 1.5rem;
+}
+
+.lowerSection .stats h3 {
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.lowerSection .stats span {
+  color: var(--Dark-grayish-blue);
+  font-size: 0.8rem;
+}
+
+hr {
+  opacity: 0.3;
+}
+
+.attribution {
+  width: 100%;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+}
